@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SwiftPickerView_Example' do
+  pod 'SwiftPickerView', :path => '../'
+
+  target 'SwiftPickerView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
