@@ -6,6 +6,7 @@
 //  Copyright (c) 2019 CoderDoraemon. All rights reserved.
 //
 
+#if canImport(UIKit)
 import UIKit
 
 public class UsefulPickerView: UIView {
@@ -189,20 +190,12 @@ extension UsefulPickerView {
 // MARK:- 弹出和移除self
 extension UsefulPickerView {
     
+    /// 通过window 弹出view
     fileprivate func showPicker() {
-        // 通过window 弹出view
+        
         let window = UIApplication.shared.keyWindow
         guard let currentWindow = window else { return }
         currentWindow.addSubview(self)
-
-//        let pickerX = NSLayoutConstraint(item: self, attribute: .Leading, relatedBy: .Equal, toItem: currentWindow, attribute: .Leading, multiplier: 1.0, constant: 0.0)
-//        
-//        let pickerY = NSLayoutConstraint(item: self, attribute: .Top, relatedBy: .Equal, toItem: currentWindow, attribute: .Top, multiplier: 1.0, constant: 0.0)
-//        let pickerW = NSLayoutConstraint(item: self, attribute: .Width, relatedBy: .Equal, toItem: currentWindow, attribute: .Width, multiplier: 1.0, constant: 0.0)
-//        let pickerH = NSLayoutConstraint(item: self, attribute: .Height, relatedBy: .Equal, toItem: currentWindow, attribute: .Height, multiplier: 1.0, constant: 0.0)
-//        self.translatesAutoresizingMaskIntoConstraints = false
-//        
-//        currentWindow.addConstraints([pickerX, pickerY, pickerW, pickerH])
         
         UIView.animate(withDuration: 0.25, animations: {[unowned self] in
             self.backgroundColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.1)
@@ -212,8 +205,9 @@ extension UsefulPickerView {
         
     }
     
+    /// 把self从window中移除
     func hidePicker() {
-        // 把self从window中移除
+        
         UIView.animate(withDuration: 0.25, animations: { [unowned self] in
             self.backgroundColor = UIColor.clear
             self.pickerView.frame = self.hideFrame
@@ -227,7 +221,7 @@ extension UsefulPickerView {
 // MARK: -  快速使用方法
 extension UsefulPickerView {
     
-    /// 单列选择器                                 ///  @author ZeroJ, 16-04-23 18:04:59
+    /// 单列选择器
     ///
     ///  - parameter title:                      标题
     ///  - parameter data:                       数据
@@ -245,14 +239,11 @@ extension UsefulPickerView {
         
     }
     
-    /// 多列不关联选择器                            ///  @author ZeroJ, 16-04-23 18:04:59
-    ///
-    ///  - parameter title:                      标题
-    ///  - parameter data:                       数据
-    ///  - parameter defaultSeletedIndexs:       默认选中的每一列的行数
-    ///  - parameter doneAction:                 响应完成的Closure
-    ///
-    ///  - returns:
+    /// 多列不关联选择器
+    /// - Parameter toolBarTitle: 标题
+    /// - Parameter data: 数据
+    /// - Parameter defaultSelectedIndexs: 默认选中的每一列的行数
+    /// - Parameter doneAction: 响应完成的Closure
     public class func showMultipleColsPicker(_ toolBarTitle: String, data: [[String]], defaultSelectedIndexs: [Int]?,doneAction: MultipleDoneAction?) {
         let window = UIApplication.shared.keyWindow
         guard let currentWindow = window else { return }
@@ -263,14 +254,11 @@ extension UsefulPickerView {
         
     }
     
-    /// 多列关联选择器                             ///  @author ZeroJ, 16-04-23 18:04:59
-    ///
-    ///  - parameter title:                      标题
-    ///  - parameter data:                       数据, 数据的格式参照示例
-    ///  - parameter defaultSeletedIndexs:       默认选中的每一列的行数
-    ///  - parameter doneAction:                 响应完成的Closure
-    ///
-    ///  - returns:
+    /// 多列关联选择器
+    /// - Parameter toolBarTitle: 标题
+    /// - Parameter data: 数据
+    /// - Parameter defaultSelectedValues: 默认选中的每一列的行数
+    /// - Parameter doneAction: 响应完成的Closure
     public class func showMultipleAssociatedColsPicker(_ toolBarTitle: String, data: MultipleAssociatedDataType, defaultSelectedValues: [String]?, doneAction: MultipleDoneAction?) {
         let window = UIApplication.shared.keyWindow
         guard let currentWindow = window else { return }
@@ -281,14 +269,11 @@ extension UsefulPickerView {
         
     }
     
- 
-    /// 城市选择器                                 ///  @author ZeroJ, 16-04-23 18:04:59
-    ///
-    ///  - parameter title:                      标题
-    ///  - parameter defaultSeletedValues:       默认选中的每一列的值, 注意不是行数
-    ///  - parameter doneAction:                 响应完成的Closure
-    ///
-    ///  - returns:
+    /// 城市选择器
+    /// - Parameter toolBarTitle:  标题
+    /// - Parameter defaultSelectedValues: 默认选中的每一列的值, 注意不是行数
+    /// - Parameter selectTopLevel: 是否顶部
+    /// - Parameter doneAction: 响应完成的Closure
     public class func showCitiesPicker(_ toolBarTitle: String, defaultSelectedValues: [String]?, selectTopLevel: Bool=false, doneAction: MultipleDoneAction?) {
         
         let window = UIApplication.shared.keyWindow
@@ -300,13 +285,10 @@ extension UsefulPickerView {
         
     }
     
-    /// 日期选择器                                 ///  @author ZeroJ, 16-04-23 18:04:59
-    ///
-    ///  - parameter title:                      标题
-    ///  - parameter datePickerSetting:          可配置UIDatePicker的样式
-    ///  - parameter doneAction:                 响应完成的Closure
-    ///
-    ///  - returns:
+    /// 日期选择器
+    /// - Parameter toolBarTitle: 标题
+    /// - Parameter datePickerSetting: 可配置UIDatePicker的样式
+    /// - Parameter doneAction: 响应完成的Closure
     public class func showDatePicker(_ toolBarTitle: String, datePickerSetting: DatePickerSetting = DatePickerSetting(), doneAction: DateDoneAction?) {
         
         let window = UIApplication.shared.keyWindow
@@ -321,3 +303,5 @@ extension UsefulPickerView {
 }
 
 
+
+#endif

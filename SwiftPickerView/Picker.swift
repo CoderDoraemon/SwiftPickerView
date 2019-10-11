@@ -6,6 +6,7 @@
 //  Copyright (c) 2019 CoderDoraemon. All rights reserved.
 //
 
+#if canImport(UIKit)
 import UIKit
 
 struct AssociatedDataModel {
@@ -488,3 +489,5 @@ extension Picker {
         
     }
 }
+
+#endif

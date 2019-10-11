@@ -6,6 +6,7 @@
 //  Copyright (c) 2019 CoderDoraemon. All rights reserved.
 //
 
+#if canImport(UIKit)
 import UIKit
 
 open class SelectionTextField: UITextField {
@@ -51,13 +52,15 @@ extension SelectionTextField {
         NotificationCenter.default.addObserver(self, selector: #selector(self.didEndEdit), name: UITextField.textDidEndEditingNotification, object: self)
     }
     // 开始编辑添加pickerView
-    @objc func didBeginEdit()  {
+    @objc
+    func didBeginEdit()  {
         let pickerView = setUpPickerClosure?()
         pickerView?.delegate = self
         inputView = pickerView
     }
     // 编辑完成销毁pickerView
-    @objc func didEndEdit() {
+    @objc
+    func didEndEdit() {
         inputView = nil
     }
     
@@ -70,15 +73,12 @@ extension SelectionTextField {
 // MARK: - 使用方法
 extension SelectionTextField {
     
-    /// 单列选择器                                 ///  @author ZeroJ, 16-04-23 18:04:59
-    ///
-    ///  - parameter title:                      标题
-    ///  - parameter data:                       数据
-    ///  - parameter defaultSeletedIndex:        默认选中的行数
-    ///  - parameter autoSetSelectedText:        设置为true的时候, 将按默认的格式自动设置textField的值
-    ///  - parameter doneAction:                 响应完成的Closure
-    ///
-    ///  - returns:
+    /// 单列选择器
+    /// - Parameter toolBarTitle: 标题
+    /// - Parameter data: 数据
+    /// - Parameter defaultSelectedIndex: 默认选中的行数
+    /// - Parameter autoSetSelectedText: 设置为true的时候, 将按默认的格式自动设置textField的值
+    /// - Parameter doneAction: 响应完成的Closure
     public func showSingleColPicker(_ toolBarTitle: String, data: [String], defaultSelectedIndex: Int?,autoSetSelectedText: Bool, doneAction: SingleDoneAction?) {
         
         self.autoSetSelectedText = autoSetSelectedText
@@ -102,15 +102,12 @@ extension SelectionTextField {
         
     }
     
-    /// 多列不关联选择器                            ///  @author ZeroJ, 16-04-23 18:04:59
-    ///
-    ///  - parameter title:                      标题
-    ///  - parameter data:                       数据
-    ///  - parameter defaultSeletedIndexs:       默认选中的每一列的行数
-    ///  - parameter autoSetSelectedText:        设置为true的时候, 将俺默认的格式自动设置textField的值
-    ///  - parameter doneAction:                 响应完成的Closure
-    ///
-    ///  - returns:
+    /// 多列不关联选择器
+    /// - Parameter toolBarTitle: 标题
+    /// - Parameter data: 数据
+    /// - Parameter defaultSelectedIndexs: 默认选中的每一列的行数
+    /// - Parameter autoSetSelectedText: 设置为true的时候, 将俺默认的格式自动设置textField的值
+    /// - Parameter doneAction: 响应完成的Closure
     public func showMultipleColsPicker(_ toolBarTitle: String, data: [[String]], defaultSelectedIndexs: [Int]?, autoSetSelectedText: Bool, doneAction: MultipleDoneAction?) {
         self.autoSetSelectedText = autoSetSelectedText
 
@@ -129,15 +126,12 @@ extension SelectionTextField {
         
     }
     
-    /// 多列关联选择器                             ///  @author ZeroJ, 16-04-23 18:04:59
-    ///
-    ///  - parameter title:                      标题
-    ///  - parameter data:                       数据, 数据的格式参照示例
-    ///  - parameter defaultSeletedIndexs:       默认选中的每一列的行数
-    ///  - parameter autoSetSelectedText:        设置为true的时候, 将按默认的格式自动设置textField的值
-    ///  - parameter doneAction:                 响应完成的Closure
-    ///
-    ///  - returns:
+    /// 多列关联选择器
+    /// - Parameter toolBarTitle: 标题
+    /// - Parameter data: 数据
+    /// - Parameter defaultSelectedValues: 默认选中的每一列的行数
+    /// - Parameter autoSetSelectedText: 设置为true的时候, 将按默认的格式自动设置textField的值
+    /// - Parameter doneAction: 响应完成的Closure
     public func showMultipleAssociatedColsPicker(_ toolBarTitle: String, data: MultipleAssociatedDataType, defaultSelectedValues: [String]?,autoSetSelectedText: Bool, doneAction: MultipleDoneAction?) {
         self.autoSetSelectedText = autoSetSelectedText
 
@@ -155,17 +149,12 @@ extension SelectionTextField {
         }
 
     }
-
     
-    /// 城市选择器                                 ///  @author ZeroJ, 16-04-23 18:04:59
-    ///
-    ///  - parameter title:                      标题
-    ///  - parameter defaultSeletedValues:       默认选中的每一列的值, 注意不是行数
-    ///  - parameter autoSetSelectedText:        设置为true的时候, 将按默认的格式自动设置textField的值
-    ///  - parameter doneAction:                 响应完成的Closure
-    ///
-    ///  - returns:
-    
+    /// 城市选择器
+    /// - Parameter toolBarTitle: 标题
+    /// - Parameter defaultSelectedValues: 默认选中的每一列的值, 注意不是行数
+    /// - Parameter autoSetSelectedText: 设置为true的时候, 将按默认的格式自动设置textField的值
+    /// - Parameter doneAction: 响应完成的Closure
     public func showCitiesPicker(_ toolBarTitle: String, defaultSelectedValues: [String]?,autoSetSelectedText: Bool, doneAction: MultipleDoneAction?) {
         self.autoSetSelectedText = autoSetSelectedText
 
@@ -182,14 +171,11 @@ extension SelectionTextField {
     
     }
     
-    /// 日期选择器                                 ///  @author ZeroJ, 16-04-23 18:04:59
-    ///
-    ///  - parameter title:                      标题
-    ///  - parameter datePickerSetting:          可配置UIDatePicker的样式
-    ///  - parameter autoSetSelectedText:        设置为true的时候, 将按默认的格式自动设置textField的值
-    ///  - parameter doneAction:                 响应完成的Closure
-    ///
-    ///  - returns:
+    /// 日期选择器
+    /// - Parameter toolBarTitle: 标题
+    /// - Parameter datePickerSetting: 可配置UIDatePicker的样式
+    /// - Parameter autoSetSelectedText: 设置为true的时候, 将按默认的格式自动设置textField的值
+    /// - Parameter doneAction: 响应完成的Closure
     public func showDatePicker(_ toolBarTitle: String, datePickerSetting: DatePickerSetting = DatePickerSetting(), autoSetSelectedText: Bool, doneAction: DateDoneAction?) {
         self.autoSetSelectedText = autoSetSelectedText
 
@@ -237,3 +223,5 @@ extension SelectionTextField: PickerViewDelegate {
         }
     }
 }
+
+#endif

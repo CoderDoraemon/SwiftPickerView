@@ -15,6 +15,7 @@
     "git": "https://github.com/CoderDoraemon/SwiftPickerView.git",
     "tag": "1.0.0"
   },
+  "frameworks": "Foundation",
   "swift_versions": "5.0",
   "platforms": {
     "ios": "8.0",

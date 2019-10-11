@@ -6,6 +6,7 @@
 //  Copyright (c) 2019 CoderDoraemon. All rights reserved.
 //
 
+#if canImport(UIKit)
 import UIKit
 
 //MARK:- PickerViewDelegate 用于自动设置TextField的选中值
@@ -633,3 +634,5 @@ extension PickerView {
     }
     
 }
+
+#endif
