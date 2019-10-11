@@ -28,6 +28,9 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/CoderDoraemon/SwiftPickerView.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
   
+  
+  s.requires_arc = true
+  
 #  s.frameworks = 'UIKit'
 
   s.swift_version = '5.0'
@@ -39,4 +42,8 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  
+  
+  s.requires_arc = true
+  
 end
