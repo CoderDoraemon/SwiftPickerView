@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1889D30523506DD4009412A5 /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1889D30423506DD4009412A5 /* ButtonViewController.swift */; };
+		1889D30723506DE3009412A5 /* TextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1889D30623506DE3009412A5 /* TextFieldViewController.swift */; };
 		2A8166D1A3811EB330EAB051 /* Pods_SwiftPickerView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB9DC5DE709B6A5B2CDB6311 /* Pods_SwiftPickerView_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -28,10 +30,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4171482CDC62F2404E5A044B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		1889D30423506DD4009412A5 /* ButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
+		1889D30623506DE3009412A5 /* TextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldViewController.swift; sourceTree = "<group>"; };
+		4171482CDC62F2404E5A044B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		57A94824E0C6A6EF4573DFB6 /* Pods_SwiftPickerView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftPickerView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59027B44C2BA1248F6BE7755 /* Pods-SwiftPickerView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftPickerView_Example.release.xcconfig"; path = "Target Support Files/Pods-SwiftPickerView_Example/Pods-SwiftPickerView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		607FACD01AFB9204008FA782 /* SwiftPickerView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPickerView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACD01AFB9204008FA782 /* SwiftPickerView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPickerView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,9 +45,9 @@
 		607FACE51AFB9204008FA782 /* SwiftPickerView_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftPickerView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		60F1CF2B2E492806FC3D46E0 /* SwiftPickerView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SwiftPickerView.podspec; path = ../SwiftPickerView.podspec; sourceTree = "<group>"; };
+		60F1CF2B2E492806FC3D46E0 /* SwiftPickerView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SwiftPickerView.podspec; path = ../SwiftPickerView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		77267EA96116C968832DA422 /* Pods-SwiftPickerView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftPickerView_Example.debug.xcconfig"; path = "Target Support Files/Pods-SwiftPickerView_Example/Pods-SwiftPickerView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		8F06391F4DCB6DE920C7E17E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		8F06391F4DCB6DE920C7E17E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B1BA0222F2B3CB600882CFF4 /* Pods-SwiftPickerView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftPickerView_Tests.release.xcconfig"; path = "Target Support Files/Pods-SwiftPickerView_Tests/Pods-SwiftPickerView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		BB9DC5DE709B6A5B2CDB6311 /* Pods_SwiftPickerView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftPickerView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F40770CBED2592FF9B4649BF /* Pods-SwiftPickerView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftPickerView_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftPickerView_Tests/Pods-SwiftPickerView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -77,7 +81,6 @@
 				F40770CBED2592FF9B4649BF /* Pods-SwiftPickerView_Tests.debug.xcconfig */,
 				B1BA0222F2B3CB600882CFF4 /* Pods-SwiftPickerView_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -96,7 +99,7 @@
 		607FACD11AFB9204008FA782 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD01AFB9204008FA782 /* SwiftPickerView_Example.app */,
+				607FACD01AFB9204008FA782 /* SwiftPickerView.app */,
 				607FACE51AFB9204008FA782 /* SwiftPickerView_Tests.xctest */,
 			);
 			name = Products;
@@ -107,6 +110,8 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				1889D30423506DD4009412A5 /* ButtonViewController.swift */,
+				1889D30623506DE3009412A5 /* TextFieldViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -179,7 +184,7 @@
 			);
 			name = SwiftPickerView_Example;
 			productName = SwiftPickerView;
-			productReference = 607FACD01AFB9204008FA782 /* SwiftPickerView_Example.app */;
+			productReference = 607FACD01AFB9204008FA782 /* SwiftPickerView.app */;
 			productType = "com.apple.product-type.application";
 		};
 		607FACE41AFB9204008FA782 /* SwiftPickerView_Tests */ = {
@@ -227,6 +232,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -331,7 +337,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1889D30723506DE3009412A5 /* TextFieldViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				1889D30523506DD4009412A5 /* ButtonViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,11 +427,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -465,10 +474,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -478,13 +488,15 @@
 			baseConfigurationReference = 77267EA96116C968832DA422 /* Pods-SwiftPickerView_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 10;
 				INFOPLIST_FILE = SwiftPickerView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = www.xfsrn.com;
+				PRODUCT_NAME = SwiftPickerView;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -493,13 +505,15 @@
 			baseConfigurationReference = 59027B44C2BA1248F6BE7755 /* Pods-SwiftPickerView_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 10;
 				INFOPLIST_FILE = SwiftPickerView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = www.xfsrn.com;
+				PRODUCT_NAME = SwiftPickerView;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

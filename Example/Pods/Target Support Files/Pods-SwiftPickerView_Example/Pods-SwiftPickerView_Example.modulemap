@@ -1,0 +1,6 @@
+framework module Pods_SwiftPickerView_Example {
+  umbrella header "Pods-SwiftPickerView_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

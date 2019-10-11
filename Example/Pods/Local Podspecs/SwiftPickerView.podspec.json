@@ -1,0 +1,23 @@
+{
+  "name": "SwiftPickerView",
+  "version": "1.0.0",
+  "summary": "SwiftPickerView",
+  "description": "自定义 SwiftPickerView",
+  "homepage": "https://github.com/CoderDoraemon/SwiftPickerView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "CoderDoraemon": "xfsrn@139.com"
+  },
+  "source": {
+    "git": "https://github.com/CoderDoraemon/SwiftPickerView.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SwiftPickerView/**/*",
+  "resources": "SwiftPickerView/SwiftPickerView.bundle"
+}
