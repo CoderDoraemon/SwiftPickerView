@@ -18,7 +18,7 @@
   "requires_arc": true,
   "swift_versions": "5.0",
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
   "source_files": "SwiftPickerView/**/*",
   "swift_version": "5.0"

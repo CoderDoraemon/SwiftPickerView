@@ -431,7 +431,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0313396B35C16718570AF106C6789A1D /* Debug */ = {
+		1AAEEFFA087AB262FF7B9363E575A313 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E092BD9F07CD6F555878C2F5F2D5ED41 /* SwiftPickerView.xcconfig */;
 			buildSettings = {
@@ -447,38 +447,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SwiftPickerView/SwiftPickerView-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SwiftPickerView/SwiftPickerView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftPickerView/SwiftPickerView.modulemap";
-				PRODUCT_MODULE_NAME = SwiftPickerView;
-				PRODUCT_NAME = SwiftPickerView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		1F0BC1E6AAFCC78866BA690C679E97F8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E092BD9F07CD6F555878C2F5F2D5ED41 /* SwiftPickerView.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftPickerView/SwiftPickerView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftPickerView/SwiftPickerView-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SwiftPickerView/SwiftPickerView.modulemap";
 				PRODUCT_MODULE_NAME = SwiftPickerView;
@@ -493,6 +462,37 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		490D5B6F950B4E32EF9931E30A79CCB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E092BD9F07CD6F555878C2F5F2D5ED41 /* SwiftPickerView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftPickerView/SwiftPickerView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftPickerView/SwiftPickerView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftPickerView/SwiftPickerView.modulemap";
+				PRODUCT_MODULE_NAME = SwiftPickerView;
+				PRODUCT_NAME = SwiftPickerView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		4EB21449A516B54C1061271378404DD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -785,8 +785,8 @@
 		676BD0B0A1C842215CEA9CDE2BDC0DA0 /* Build configuration list for PBXNativeTarget "SwiftPickerView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0313396B35C16718570AF106C6789A1D /* Debug */,
-				1F0BC1E6AAFCC78866BA690C679E97F8 /* Release */,
+				490D5B6F950B4E32EF9931E30A79CCB4 /* Debug */,
+				1AAEEFFA087AB262FF7B9363E575A313 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
