@@ -31,11 +31,9 @@ Pod::Spec.new do |s|
   
   s.requires_arc = true
   
-  s.frameworks = 'UIKit', 'Foundation'
-
   s.swift_version = '5.0'
   
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
   
   s.source_files = 'SwiftPickerView/**/*'
   

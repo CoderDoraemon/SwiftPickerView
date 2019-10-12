@@ -16,10 +16,6 @@
     "tag": "1.0.0"
   },
   "requires_arc": true,
-  "frameworks": [
-    "UIKit",
-    "Foundation"
-  ],
   "swift_versions": "5.0",
   "platforms": {
     "ios": "8.0"

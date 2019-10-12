@@ -7,24 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		099AAC6176CB961DBA5F175575EE57B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		075B1CC810AF9C724573843810C8232B /* City.plist in Sources */ = {isa = PBXBuildFile; fileRef = 866547B9725ACFA1CAD9BE5EED1200F0 /* City.plist */; };
+		099AAC6176CB961DBA5F175575EE57B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		0F5CF2C3A4C5947E62E375869DD6981D /* SwiftPickerView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A0CEC08834331E8AA35AB703B1C7FA2 /* SwiftPickerView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		129205660D8C04F4877C0EDCBD2B028B /* Pods-SwiftPickerView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05DD92019B514F90C91D146EFD232851 /* Pods-SwiftPickerView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		221FE8DAC3DC4F2D295A4598444D93DF /* Province.plist in Sources */ = {isa = PBXBuildFile; fileRef = F4FC99536AB8AD560F6946307FF5DE5E /* Province.plist */; };
-		36F387EC346AF9B616079A4674EA25F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
-		3844970BB86A72205B6451EC8F893854 /* Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEDC34FBC3FAF7ABAD262673896D40B /* Picker.swift */; };
-		4EA2DAD06A4345274A2E06ADDFE38AFF /* SwiftPickerView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A0CEC08834331E8AA35AB703B1C7FA2 /* SwiftPickerView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		799F8F336C01D44EE5A4E51CB921038A /* PickerViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8C3D28F08494E4F27DF73FED1C98AA /* PickerViewManager.swift */; };
-		87E8684D0E0D2AEC21A74C5B8D8BE489 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
-		88C9AEA9B3DEE2F53B9A2D2FC8430845 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269CCFAC62B3A1B99BAAB59410467C87 /* PickerView.swift */; };
+		1C8CA5EB0A452AFCD2539F467D30224D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		36F8EA1D32A8BC2C673659355D7B93E1 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269CCFAC62B3A1B99BAAB59410467C87 /* PickerView.swift */; };
+		66E95D16CFD9FCBB03D6C4681E816E59 /* PickerViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8C3D28F08494E4F27DF73FED1C98AA /* PickerViewManager.swift */; };
+		7F9AC2A6E0BD12EAC5BFB90E3639E4C4 /* SwiftPickerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FF3C06E544B472875A68BA98BCFFF5 /* SwiftPickerView-dummy.m */; };
+		87E8684D0E0D2AEC21A74C5B8D8BE489 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		8A457D7026FC257BF3CE51A759A4872D /* Pods-SwiftPickerView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EDC0D8F3E07C6987B222F50C93CA10DB /* Pods-SwiftPickerView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8B1AF3D1D8D4A344ECD29CFAC8309CE4 /* SelectionTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C2FC3721EE13BB563A499A19ED9496 /* SelectionTextField.swift */; };
+		8ABC1EB460AB89E4A96D82FC5BB9B6D2 /* Province.plist in Sources */ = {isa = PBXBuildFile; fileRef = F4FC99536AB8AD560F6946307FF5DE5E /* Province.plist */; };
+		8B149ECB6F481259641615BC75D5B3F9 /* Area.plist in Sources */ = {isa = PBXBuildFile; fileRef = 378A4136E667761117AAAFB1A9E20A39 /* Area.plist */; };
 		976031015322D7F3DFF2AEF19830493B /* Pods-SwiftPickerView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 343EA51A3574DBF618E8F67251AE6889 /* Pods-SwiftPickerView_Example-dummy.m */; };
-		9A4B5064A943A9A6F7C0C4D9A92EBCA4 /* ToolBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D077EA03756C2CD3CF8FE363CE289C26 /* ToolBarView.swift */; };
+		9EC6C2B052B4090EC23F1B410AB619A2 /* SelectionTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C2FC3721EE13BB563A499A19ED9496 /* SelectionTextField.swift */; };
 		AA105B4B88D1390F8933E38D6CC47A19 /* Pods-SwiftPickerView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BCA39FD0F919BC304D1E1F777CDA2F /* Pods-SwiftPickerView_Tests-dummy.m */; };
-		C70133E94388B06789655AA4BE31B464 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
-		D2B71907371D39DAA4D317A139708318 /* Area.plist in Sources */ = {isa = PBXBuildFile; fileRef = 378A4136E667761117AAAFB1A9E20A39 /* Area.plist */; };
-		DC385B8697512F637F5DE95E82C0A341 /* SwiftPickerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FF3C06E544B472875A68BA98BCFFF5 /* SwiftPickerView-dummy.m */; };
-		E7531F22125A5935949667B99E7349B2 /* City.plist in Sources */ = {isa = PBXBuildFile; fileRef = 866547B9725ACFA1CAD9BE5EED1200F0 /* City.plist */; };
+		B5AFB1CA8004F24D4C47EFA7C1FC3509 /* Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEDC34FBC3FAF7ABAD262673896D40B /* Picker.swift */; };
+		EB340EDC314022362BA0410B09EEEC88 /* ToolBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D077EA03756C2CD3CF8FE363CE289C26 /* ToolBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,11 +53,10 @@
 		1B9D4EC1D421760A067CB1395893059A /* Pods-SwiftPickerView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftPickerView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		269CCFAC62B3A1B99BAAB59410467C87 /* PickerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PickerView.swift; path = SwiftPickerView/PickerView.swift; sourceTree = "<group>"; };
 		306E842B4446CC2967F5C95BC0122A2C /* Pods-SwiftPickerView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftPickerView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		32B88F34021F9FB7C9989E4CE4971D4B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		343EA51A3574DBF618E8F67251AE6889 /* Pods-SwiftPickerView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftPickerView_Example-dummy.m"; sourceTree = "<group>"; };
 		378A4136E667761117AAAFB1A9E20A39 /* Area.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Area.plist; path = SwiftPickerView/Area.plist; sourceTree = "<group>"; };
-		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5857889D5B2299E4207F1C36FCF565C6 /* Pods_SwiftPickerView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SwiftPickerView_Example.framework; path = "Pods-SwiftPickerView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59370D5C94108CA3C718EC2135187E63 /* SwiftPickerView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftPickerView-Info.plist"; sourceTree = "<group>"; };
 		6395C12FB283EA1488CD7100A1C8BF1B /* Pods-SwiftPickerView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftPickerView_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -88,12 +86,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3DE40DFF3E8C83911FFE71F688A23BF1 /* Frameworks */ = {
+		1D6521AD60A03FAD7401EE5FD64A0C51 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36F387EC346AF9B616079A4674EA25F2 /* Foundation.framework in Frameworks */,
-				C70133E94388B06789655AA4BE31B464 /* UIKit.framework in Frameworks */,
+				1C8CA5EB0A452AFCD2539F467D30224D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,14 +113,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E2983683FD097A93297E2F5D4E382B36 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		1EBA65A2680AB37E6C5C4D1EA30EE768 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,15 +205,31 @@
 			path = ../..;
 			sourceTree = "<group>";
 		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				74F668C6B415D8D02CC4CD7ECE1C592F /* Development Pods */,
-				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				9A065FEA8067EBF0B6510B703E3ED3F9 /* Products */,
 				1EBA65A2680AB37E6C5C4D1EA30EE768 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D5DA2664C32B2EA3044474206D7F1E92 /* Pod */ = {
@@ -235,15 +240,6 @@
 				96BAB2E940E943E7F5FA49658D24F0E4 /* SwiftPickerView.podspec */,
 			);
 			name = Pod;
-			sourceTree = "<group>";
-		};
-		E2983683FD097A93297E2F5D4E382B36 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */,
-				312B988EF117AE4DE76A268D970131FE /* UIKit.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,11 +261,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		84DC58341A6A5A9A3812B026910EC23C /* Headers */ = {
+		D57B0CAFCD056572EDD72A761D6211BC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EA2DAD06A4345274A2E06ADDFE38AFF /* SwiftPickerView-umbrella.h in Headers */,
+				0F5CF2C3A4C5947E62E375869DD6981D /* SwiftPickerView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,12 +274,12 @@
 /* Begin PBXNativeTarget section */
 		2C73FBD681CFA55601564053771C2F48 /* SwiftPickerView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ED9391C3BA7F0DEE5E13AC1ACF334FC3 /* Build configuration list for PBXNativeTarget "SwiftPickerView" */;
+			buildConfigurationList = 676BD0B0A1C842215CEA9CDE2BDC0DA0 /* Build configuration list for PBXNativeTarget "SwiftPickerView" */;
 			buildPhases = (
-				84DC58341A6A5A9A3812B026910EC23C /* Headers */,
-				4437477144933B7C8BCF3B1CE28B28D3 /* Sources */,
-				3DE40DFF3E8C83911FFE71F688A23BF1 /* Frameworks */,
-				E85DA139756B4367CA3DE692F73BB4AC /* Resources */,
+				D57B0CAFCD056572EDD72A761D6211BC /* Headers */,
+				D9F3AFBCE168497DFA61962B242B81FA /* Sources */,
+				1D6521AD60A03FAD7401EE5FD64A0C51 /* Frameworks */,
+				E90AA1E36E9771B4B3AFCD17EC186FA4 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -368,7 +364,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E85DA139756B4367CA3DE692F73BB4AC /* Resources */ = {
+		E90AA1E36E9771B4B3AFCD17EC186FA4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -393,27 +389,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4437477144933B7C8BCF3B1CE28B28D3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D2B71907371D39DAA4D317A139708318 /* Area.plist in Sources */,
-				E7531F22125A5935949667B99E7349B2 /* City.plist in Sources */,
-				3844970BB86A72205B6451EC8F893854 /* Picker.swift in Sources */,
-				88C9AEA9B3DEE2F53B9A2D2FC8430845 /* PickerView.swift in Sources */,
-				799F8F336C01D44EE5A4E51CB921038A /* PickerViewManager.swift in Sources */,
-				221FE8DAC3DC4F2D295A4598444D93DF /* Province.plist in Sources */,
-				8B1AF3D1D8D4A344ECD29CFAC8309CE4 /* SelectionTextField.swift in Sources */,
-				DC385B8697512F637F5DE95E82C0A341 /* SwiftPickerView-dummy.m in Sources */,
-				9A4B5064A943A9A6F7C0C4D9A92EBCA4 /* ToolBarView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5B712AC1846B4BACE2FFE10EE2B82D12 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				976031015322D7F3DFF2AEF19830493B /* Pods-SwiftPickerView_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9F3AFBCE168497DFA61962B242B81FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B149ECB6F481259641615BC75D5B3F9 /* Area.plist in Sources */,
+				075B1CC810AF9C724573843810C8232B /* City.plist in Sources */,
+				B5AFB1CA8004F24D4C47EFA7C1FC3509 /* Picker.swift in Sources */,
+				36F8EA1D32A8BC2C673659355D7B93E1 /* PickerView.swift in Sources */,
+				66E95D16CFD9FCBB03D6C4681E816E59 /* PickerViewManager.swift in Sources */,
+				8ABC1EB460AB89E4A96D82FC5BB9B6D2 /* Province.plist in Sources */,
+				9EC6C2B052B4090EC23F1B410AB619A2 /* SelectionTextField.swift in Sources */,
+				7F9AC2A6E0BD12EAC5BFB90E3639E4C4 /* SwiftPickerView-dummy.m in Sources */,
+				EB340EDC314022362BA0410B09EEEC88 /* ToolBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,7 +431,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1FF5F6D51B2499CDB3AC6DCA3DB6D386 /* Debug */ = {
+		0313396B35C16718570AF106C6789A1D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E092BD9F07CD6F555878C2F5F2D5ED41 /* SwiftPickerView.xcconfig */;
 			buildSettings = {
@@ -466,7 +462,7 @@
 			};
 			name = Debug;
 		};
-		435CBAC05C401081505FA0017D7F480C /* Release */ = {
+		1F0BC1E6AAFCC78866BA690C679E97F8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E092BD9F07CD6F555878C2F5F2D5ED41 /* SwiftPickerView.xcconfig */;
 			buildSettings = {
@@ -786,11 +782,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ED9391C3BA7F0DEE5E13AC1ACF334FC3 /* Build configuration list for PBXNativeTarget "SwiftPickerView" */ = {
+		676BD0B0A1C842215CEA9CDE2BDC0DA0 /* Build configuration list for PBXNativeTarget "SwiftPickerView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1FF5F6D51B2499CDB3AC6DCA3DB6D386 /* Debug */,
-				435CBAC05C401081505FA0017D7F480C /* Release */,
+				0313396B35C16718570AF106C6789A1D /* Debug */,
+				1F0BC1E6AAFCC78866BA690C679E97F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
