@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-自定义 SwiftPickerView
+自定义SwiftPickerView
                        DESC
 
   s.homepage         = 'https://github.com/CoderDoraemon/SwiftPickerView'
@@ -31,18 +31,13 @@ Pod::Spec.new do |s|
   
   s.requires_arc = true
   
-#  s.frameworks = 'UIKit'
+  s.frameworks = 'UIKit', 'Foundation'
 
   s.swift_version = '5.0'
   
   s.ios.deployment_target = '8.0'
   
   s.source_files = 'SwiftPickerView/**/*'
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
-  
   
   s.requires_arc = true
   
