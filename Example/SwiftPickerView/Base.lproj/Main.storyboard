@@ -7,61 +7,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--使用分类-->
-        <scene sceneID="Hsm-Bt-UNl">
-            <objects>
-                <viewController id="n9B-he-dAr" customClass="ViewController" customModule="SwiftPickerView" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="dYb-XC-A6J"/>
-                        <viewControllerLayoutGuide type="bottom" id="csd-8f-OsU"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="y54-9v-HlV">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQf-ED-pJm">
-                                <rect key="frame" x="0.0" y="104" width="375" height="44"/>
-                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="eMW-cI-bJR"/>
-                                </constraints>
-                                <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="按钮使用示例">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Lgl-ge-tfC" kind="show" id="cYk-D3-BQf"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Plu-Ib-Aq6">
-                                <rect key="frame" x="0.0" y="149" width="375" height="44"/>
-                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="TextField使用示例">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="0fz-zx-yla" kind="show" id="Pws-1Y-DDF"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="Plu-Ib-Aq6" firstAttribute="height" secondItem="kQf-ED-pJm" secondAttribute="height" id="36z-z8-Qnb"/>
-                            <constraint firstItem="kQf-ED-pJm" firstAttribute="leading" secondItem="y54-9v-HlV" secondAttribute="leading" id="LRH-b4-W7m"/>
-                            <constraint firstAttribute="trailing" secondItem="kQf-ED-pJm" secondAttribute="trailing" id="Mf0-Fg-gee"/>
-                            <constraint firstItem="Plu-Ib-Aq6" firstAttribute="leading" secondItem="kQf-ED-pJm" secondAttribute="leading" id="ZCr-AV-Gj3"/>
-                            <constraint firstItem="kQf-ED-pJm" firstAttribute="top" secondItem="dYb-XC-A6J" secondAttribute="bottom" constant="60" id="ehY-HF-Fie"/>
-                            <constraint firstItem="Plu-Ib-Aq6" firstAttribute="top" secondItem="kQf-ED-pJm" secondAttribute="bottom" constant="1" id="mtO-Zz-iWl"/>
-                            <constraint firstItem="Plu-Ib-Aq6" firstAttribute="trailing" secondItem="kQf-ED-pJm" secondAttribute="trailing" id="syE-Yh-1LD"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="使用分类" id="VDa-lG-kdl"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HNF-fa-YvL" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="861" y="337"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="EfW-oA-XcR">
             <objects>
@@ -73,17 +18,17 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="n9B-he-dAr" kind="relationship" relationship="rootViewController" id="eED-ou-YGs"/>
+                        <segue destination="Lgl-ge-tfC" kind="relationship" relationship="rootViewController" id="bbj-tD-3qG"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fRk-x2-3k2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="49" y="337"/>
         </scene>
-        <!--按钮使用示例-->
+        <!--SwiftPickerView示例-->
         <scene sceneID="p2F-N0-dt8">
             <objects>
-                <viewController id="Lgl-ge-tfC" customClass="ButtonViewController" customModule="SwiftPickerView" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Lgl-ge-tfC" customClass="ViewController" customModule="SwiftPickerView" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FGU-xJ-bLq"/>
                         <viewControllerLayoutGuide type="bottom" id="Okh-0x-bO7"/>
@@ -93,7 +38,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWR-k1-acV">
-                                <rect key="frame" x="0.0" y="95" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="95" width="375" height="44"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Ibq-3h-NrC"/>
@@ -107,7 +52,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BX3-7u-Zha">
-                                <rect key="frame" x="0.0" y="140" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="140" width="375" height="44"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="多列不关联数据选择">
@@ -118,7 +63,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tx0-Mg-R5L">
-                                <rect key="frame" x="0.0" y="230" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="230" width="375" height="44"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="省市区选择">
@@ -129,7 +74,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWZ-as-g3b">
-                                <rect key="frame" x="0.0" y="275" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="275" width="375" height="44"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="w3N-au-9cQ"/>
@@ -143,7 +88,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DtQ-JH-EfG">
-                                <rect key="frame" x="0.0" y="320" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="320" width="375" height="44"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="时间选择">
@@ -154,13 +99,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选中的数据" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfc-jx-jGT">
-                                <rect key="frame" x="20" y="408" width="560" height="23"/>
+                                <rect key="frame" x="20" y="408" width="335" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zu6-zf-T3G">
-                                <rect key="frame" x="0.0" y="185" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="185" width="375" height="44"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="a8h-cZ-Xu9"/>
@@ -183,9 +128,9 @@
                             <constraint firstItem="BX3-7u-Zha" firstAttribute="top" secondItem="cWR-k1-acV" secondAttribute="bottom" constant="1" id="MkR-vd-YXU"/>
                             <constraint firstItem="DtQ-JH-EfG" firstAttribute="trailing" secondItem="aWZ-as-g3b" secondAttribute="trailing" id="OYF-Bm-iqk"/>
                             <constraint firstItem="Tx0-Mg-R5L" firstAttribute="leading" secondItem="Zu6-zf-T3G" secondAttribute="leading" id="RMr-KT-ALZ"/>
-                            <constraint firstAttribute="trailing" secondItem="gfc-jx-jGT" secondAttribute="trailing" constant="-205" id="RjN-HE-nMK"/>
+                            <constraint firstAttribute="trailing" secondItem="gfc-jx-jGT" secondAttribute="trailing" constant="20" id="RjN-HE-nMK"/>
                             <constraint firstItem="Zu6-zf-T3G" firstAttribute="trailing" secondItem="BX3-7u-Zha" secondAttribute="trailing" id="T4a-AB-p3B"/>
-                            <constraint firstAttribute="trailing" secondItem="cWR-k1-acV" secondAttribute="trailing" constant="-225" id="THs-j8-XHP"/>
+                            <constraint firstAttribute="trailing" secondItem="cWR-k1-acV" secondAttribute="trailing" id="THs-j8-XHP"/>
                             <constraint firstItem="DtQ-JH-EfG" firstAttribute="leading" secondItem="aWZ-as-g3b" secondAttribute="leading" id="TwC-Zw-EBD"/>
                             <constraint firstItem="Tx0-Mg-R5L" firstAttribute="leading" secondItem="BX3-7u-Zha" secondAttribute="leading" id="UZS-oK-ghX"/>
                             <constraint firstItem="Zu6-zf-T3G" firstAttribute="leading" secondItem="BX3-7u-Zha" secondAttribute="leading" id="VKe-a5-jPP"/>
@@ -206,103 +151,14 @@
                             <constraint firstItem="Tx0-Mg-R5L" firstAttribute="trailing" secondItem="Zu6-zf-T3G" secondAttribute="trailing" id="zLA-Ea-6Vr"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="按钮使用示例" id="nFL-WG-kC8"/>
+                    <navigationItem key="navigationItem" title="SwiftPickerView示例" id="nFL-WG-kC8"/>
                     <connections>
                         <outlet property="selectedDataLabel" destination="gfc-jx-jGT" id="nnL-wn-npH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ghP-YJ-eHo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1629" y="58"/>
-        </scene>
-        <!--TextField使用示例-->
-        <scene sceneID="Zi3-cT-8u8">
-            <objects>
-                <viewController id="0fz-zx-yla" customClass="TextFieldViewController" customModule="SwiftPickerView" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="pm6-7h-N3s"/>
-                        <viewControllerLayoutGuide type="bottom" id="xYm-Hu-fLO"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="7EF-NQ-dWX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="省市区选择" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xL9-eB-zhR" customClass="SelectionTextField" customModule="UsefulPickerVIew" customModuleProvider="target">
-                                <rect key="frame" x="20" y="227" width="560" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="日期选择" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="db0-qt-gzL" customClass="SelectionTextField" customModule="UsefulPickerVIew" customModuleProvider="target">
-                                <rect key="frame" x="20" y="267" width="560" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="时间选择" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4y4-t5-Crf" customClass="SelectionTextField" customModule="UsefulPickerVIew" customModuleProvider="target">
-                                <rect key="frame" x="20" y="307" width="560" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="选中的数据" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x8n-LJ-f7i">
-                                <rect key="frame" x="20" y="376" width="560" height="23"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="单列数据选择" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o54-Dt-UAq" customClass="SelectionTextField" customModule="UsefulPickerVIew" customModuleProvider="target">
-                                <rect key="frame" x="20" y="107" width="560" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="多列不关联数据选择" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yAE-84-bNp" customClass="SelectionTextField" customModule="UsefulPickerVIew" customModuleProvider="target">
-                                <rect key="frame" x="20" y="147" width="560" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="多列关联数据选择" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bUT-Dt-dL9" customClass="SelectionTextField" customModule="UsefulPickerVIew" customModuleProvider="target">
-                                <rect key="frame" x="20" y="187" width="560" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="db0-qt-gzL" firstAttribute="trailing" secondItem="o54-Dt-UAq" secondAttribute="trailing" id="0bM-4a-Rac"/>
-                            <constraint firstItem="4y4-t5-Crf" firstAttribute="top" secondItem="db0-qt-gzL" secondAttribute="bottom" constant="10" id="3xR-8b-UWY"/>
-                            <constraint firstItem="o54-Dt-UAq" firstAttribute="top" secondItem="pm6-7h-N3s" secondAttribute="bottom" constant="63" id="7V7-3l-LTb"/>
-                            <constraint firstItem="bUT-Dt-dL9" firstAttribute="leading" secondItem="o54-Dt-UAq" secondAttribute="leading" id="7cf-jj-6XX"/>
-                            <constraint firstItem="4y4-t5-Crf" firstAttribute="trailing" secondItem="o54-Dt-UAq" secondAttribute="trailing" id="B3o-LK-Hat"/>
-                            <constraint firstItem="bUT-Dt-dL9" firstAttribute="top" secondItem="yAE-84-bNp" secondAttribute="bottom" constant="10" id="Krc-FZ-X5G"/>
-                            <constraint firstItem="x8n-LJ-f7i" firstAttribute="leading" secondItem="7EF-NQ-dWX" secondAttribute="leading" constant="20" id="LEN-Ch-1KH"/>
-                            <constraint firstItem="xL9-eB-zhR" firstAttribute="top" secondItem="bUT-Dt-dL9" secondAttribute="bottom" constant="10" id="Ob4-aI-fyN"/>
-                            <constraint firstItem="xL9-eB-zhR" firstAttribute="leading" secondItem="o54-Dt-UAq" secondAttribute="leading" id="Ovn-yp-hrb"/>
-                            <constraint firstItem="yAE-84-bNp" firstAttribute="trailing" secondItem="o54-Dt-UAq" secondAttribute="trailing" id="Pu1-QU-Efv"/>
-                            <constraint firstItem="4y4-t5-Crf" firstAttribute="leading" secondItem="o54-Dt-UAq" secondAttribute="leading" id="SXj-uT-jCP"/>
-                            <constraint firstAttribute="trailing" secondItem="x8n-LJ-f7i" secondAttribute="trailing" constant="-205" id="bCZ-Sy-Ep4"/>
-                            <constraint firstItem="o54-Dt-UAq" firstAttribute="leading" secondItem="7EF-NQ-dWX" secondAttribute="leading" constant="20" id="iFq-Pb-agn"/>
-                            <constraint firstItem="db0-qt-gzL" firstAttribute="top" secondItem="xL9-eB-zhR" secondAttribute="bottom" constant="10" id="ieQ-e6-mN2"/>
-                            <constraint firstItem="xL9-eB-zhR" firstAttribute="trailing" secondItem="o54-Dt-UAq" secondAttribute="trailing" id="j5K-1b-gqF"/>
-                            <constraint firstItem="yAE-84-bNp" firstAttribute="leading" secondItem="o54-Dt-UAq" secondAttribute="leading" id="kea-BP-83e"/>
-                            <constraint firstItem="db0-qt-gzL" firstAttribute="leading" secondItem="o54-Dt-UAq" secondAttribute="leading" id="lhG-71-gHV"/>
-                            <constraint firstItem="bUT-Dt-dL9" firstAttribute="trailing" secondItem="o54-Dt-UAq" secondAttribute="trailing" id="mZg-C8-Aoe"/>
-                            <constraint firstItem="yAE-84-bNp" firstAttribute="top" secondItem="o54-Dt-UAq" secondAttribute="bottom" constant="10" id="mv1-36-hvQ"/>
-                            <constraint firstAttribute="trailing" secondItem="o54-Dt-UAq" secondAttribute="trailing" constant="-205" id="tDJ-8H-Y7c"/>
-                            <constraint firstItem="x8n-LJ-f7i" firstAttribute="top" secondItem="4y4-t5-Crf" secondAttribute="bottom" constant="39" id="zwi-Vc-nnk"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="TextField使用示例" id="5dJ-8h-RTl"/>
-                    <connections>
-                        <outlet property="citiesTextField" destination="xL9-eB-zhR" id="6z2-Es-HyO"/>
-                        <outlet property="dateTextField" destination="db0-qt-gzL" id="kLk-Y3-eHB"/>
-                        <outlet property="multipleAssociatedTextField" destination="bUT-Dt-dL9" id="EAM-JF-lUv"/>
-                        <outlet property="multipleTextField" destination="yAE-84-bNp" id="Ryd-ty-sf8"/>
-                        <outlet property="selectedDataLabel" destination="x8n-LJ-f7i" id="hxO-aV-znp"/>
-                        <outlet property="singleTextField" destination="o54-Dt-UAq" id="rA0-bj-Cfu"/>
-                        <outlet property="timeTextField" destination="4y4-t5-Crf" id="VX6-lC-0kR"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="f4l-0c-3fv" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1601" y="732"/>
+            <point key="canvasLocation" x="831" y="337"/>
         </scene>
     </scenes>
 </document>
