@@ -1,5 +1,5 @@
 //
-//  UsefulPickerView.swift
+//  PickerViewManager.swift
 //  SwiftPickerView
 //
 //  Created by CoderDoraemon on 10/11/2019.
@@ -9,7 +9,7 @@
 #if canImport(UIKit)
 import UIKit
 
-public class UsefulPickerView: UIView {
+public class PickerViewManager: UIView {
 
     public typealias BtnAction = () -> Void
     public typealias SingleDoneAction = (_ selectedIndex: Int, _ selectedValue: String) -> Void
@@ -166,7 +166,7 @@ public class UsefulPickerView: UIView {
 }
 
 // MARK:- selector
-extension UsefulPickerView {
+extension PickerViewManager {
     
     fileprivate func addOrentationObserver() {
         NotificationCenter.default.addObserver(self, selector: #selector(self.statusBarOrientationChange), name: UIApplication.didChangeStatusBarOrientationNotification, object: nil)
@@ -188,7 +188,7 @@ extension UsefulPickerView {
 }
 
 // MARK:- 弹出和移除self
-extension UsefulPickerView {
+extension PickerViewManager {
     
     /// 通过window 弹出view
     fileprivate func showPicker() {
@@ -219,7 +219,7 @@ extension UsefulPickerView {
 }
 
 // MARK: -  快速使用方法
-extension UsefulPickerView {
+extension PickerViewManager {
     
     /// 单列选择器
     ///
@@ -233,7 +233,7 @@ extension UsefulPickerView {
         let window = UIApplication.shared.keyWindow
         guard let currentWindow = window else { return }
         
-        let testView = UsefulPickerView(frame: currentWindow.bounds, toolBarTitle: toolBarTitle, singleColData: data,defaultSelectedIndex: defaultSelectedIndex ,doneAction: doneAction)
+        let testView = PickerViewManager(frame: currentWindow.bounds, toolBarTitle: toolBarTitle, singleColData: data,defaultSelectedIndex: defaultSelectedIndex ,doneAction: doneAction)
         
         testView.showPicker()
         
@@ -248,7 +248,7 @@ extension UsefulPickerView {
         let window = UIApplication.shared.keyWindow
         guard let currentWindow = window else { return }
         
-        let testView = UsefulPickerView(frame: currentWindow.bounds, toolBarTitle: toolBarTitle, multipleColsData: data, defaultSelectedIndexs: defaultSelectedIndexs, doneAction: doneAction)
+        let testView = PickerViewManager(frame: currentWindow.bounds, toolBarTitle: toolBarTitle, multipleColsData: data, defaultSelectedIndexs: defaultSelectedIndexs, doneAction: doneAction)
         
         testView.showPicker()
         
@@ -263,7 +263,7 @@ extension UsefulPickerView {
         let window = UIApplication.shared.keyWindow
         guard let currentWindow = window else { return }
         
-        let testView = UsefulPickerView(frame: currentWindow.bounds, toolBarTitle: toolBarTitle, multipleAssociatedColsData: data, defaultSelectedValues: defaultSelectedValues, doneAction: doneAction)
+        let testView = PickerViewManager(frame: currentWindow.bounds, toolBarTitle: toolBarTitle, multipleAssociatedColsData: data, defaultSelectedValues: defaultSelectedValues, doneAction: doneAction)
         
         testView.showPicker()
         
@@ -279,7 +279,7 @@ extension UsefulPickerView {
         let window = UIApplication.shared.keyWindow
         guard let currentWindow = window else { return }
         
-      let testView = UsefulPickerView(frame: currentWindow.bounds, toolBarTitle: toolBarTitle, defaultSelectedValues: defaultSelectedValues, doneAction: doneAction, selectTopLevel: selectTopLevel)
+      let testView = PickerViewManager(frame: currentWindow.bounds, toolBarTitle: toolBarTitle, defaultSelectedValues: defaultSelectedValues, doneAction: doneAction, selectTopLevel: selectTopLevel)
       
         testView.showPicker()
         
@@ -294,7 +294,7 @@ extension UsefulPickerView {
         let window = UIApplication.shared.keyWindow
         guard let currentWindow = window else { return }
         
-        let testView = UsefulPickerView(frame: currentWindow.bounds, toolBarTitle: toolBarTitle, datePickerSetting: datePickerSetting, doneAction: doneAction)
+        let testView = PickerViewManager(frame: currentWindow.bounds, toolBarTitle: toolBarTitle, datePickerSetting: datePickerSetting, doneAction: doneAction)
         
         testView.showPicker()
         

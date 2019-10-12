@@ -13,7 +13,7 @@
 		129205660D8C04F4877C0EDCBD2B028B /* Pods-SwiftPickerView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05DD92019B514F90C91D146EFD232851 /* Pods-SwiftPickerView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		13242EFF19C8810CA8E33A921A0EC74A /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679457A38A16A1D3E9144CDC274C5044 /* PickerView.swift */; };
 		1C8CA5EB0A452AFCD2539F467D30224D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		5316693829AD7B34BE000CC330B0A32C /* UsefulPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBD848EEDF8E0F4ABC1B56242E436AC /* UsefulPickerView.swift */; };
+		5316693829AD7B34BE000CC330B0A32C /* PickerViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBD848EEDF8E0F4ABC1B56242E436AC /* PickerViewManager.swift */; };
 		563151B3F56B04C8933BD867588D6AE2 /* Area.plist in Sources */ = {isa = PBXBuildFile; fileRef = C7697DFE0D6AF47D2149468A415EBA1C /* Area.plist */; };
 		6C41684B3741B28F203861621CF524FE /* SelectionTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1750C2F4593544B6FC33E02732952C0 /* SelectionTextField.swift */; };
 		87E8684D0E0D2AEC21A74C5B8D8BE489 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
@@ -45,12 +45,12 @@
 
 /* Begin PBXFileReference section */
 		05DD92019B514F90C91D146EFD232851 /* Pods-SwiftPickerView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftPickerView_Tests-umbrella.h"; sourceTree = "<group>"; };
-		0789CD93B3A9F9262A9331687ACAA6E3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		0789CD93B3A9F9262A9331687ACAA6E3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0BF05637370C023306FD5AF1FE0B36FC /* SwiftPickerView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftPickerView-Info.plist"; sourceTree = "<group>"; };
 		0C2D6036B526AE9C5FE29A5E5F027D62 /* Pods-SwiftPickerView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftPickerView_Example-frameworks.sh"; sourceTree = "<group>"; };
 		1092C972159EC24D8FAB7A711749BB10 /* SwiftPickerView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftPickerView.modulemap; sourceTree = "<group>"; };
 		1375DA8EFBCAC2C25EEAB798EC062F00 /* Pods-SwiftPickerView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftPickerView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		17329609EC31A19732118A990FB8F3C0 /* SwiftPickerView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SwiftPickerView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		17329609EC31A19732118A990FB8F3C0 /* SwiftPickerView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SwiftPickerView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		1B9D4EC1D421760A067CB1395893059A /* Pods-SwiftPickerView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftPickerView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		1C69C4E38CE4D82B31E13CA778677534 /* Province.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Province.plist; path = SwiftPickerView/Province.plist; sourceTree = "<group>"; };
 		2BE056A24F195D35299CE2B3974302FE /* SwiftPickerView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftPickerView-umbrella.h"; sourceTree = "<group>"; };
@@ -58,25 +58,25 @@
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		343EA51A3574DBF618E8F67251AE6889 /* Pods-SwiftPickerView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftPickerView_Example-dummy.m"; sourceTree = "<group>"; };
 		519C1A87C0FA3CF7E6494885B715DEF8 /* City.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = City.plist; path = SwiftPickerView/City.plist; sourceTree = "<group>"; };
-		55A15419CB037C51187B83CCD7084537 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		55A15419CB037C51187B83CCD7084537 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		584826FCA3B43639B666C7F8782BB0F3 /* SwiftPickerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftPickerView-prefix.pch"; sourceTree = "<group>"; };
-		5857889D5B2299E4207F1C36FCF565C6 /* Pods_SwiftPickerView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SwiftPickerView_Example.framework; path = "Pods-SwiftPickerView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5857889D5B2299E4207F1C36FCF565C6 /* Pods_SwiftPickerView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftPickerView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6395C12FB283EA1488CD7100A1C8BF1B /* Pods-SwiftPickerView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftPickerView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		65BCA39FD0F919BC304D1E1F777CDA2F /* Pods-SwiftPickerView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftPickerView_Tests-dummy.m"; sourceTree = "<group>"; };
 		679457A38A16A1D3E9144CDC274C5044 /* PickerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PickerView.swift; path = SwiftPickerView/PickerView.swift; sourceTree = "<group>"; };
-		7AD1773868EEA195EBC2D46947D8D942 /* Pods_SwiftPickerView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SwiftPickerView_Tests.framework; path = "Pods-SwiftPickerView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AD1773868EEA195EBC2D46947D8D942 /* Pods_SwiftPickerView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftPickerView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A658FE401CF07049EEBEBBA50DA3CF1 /* Pods-SwiftPickerView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftPickerView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		96BF721944C2AD39433D206E5F8A205B /* Pods-SwiftPickerView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftPickerView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9853B8E441769A1AEF3B5449611CC5B6 /* SwiftPickerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftPickerView-dummy.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A19716A427D738360A2F236FD727F5C7 /* Pods-SwiftPickerView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftPickerView_Tests-Info.plist"; sourceTree = "<group>"; };
 		C05EF78E05CBA5B8811F8810930908E5 /* ToolBarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToolBarView.swift; path = SwiftPickerView/ToolBarView.swift; sourceTree = "<group>"; };
 		C1750C2F4593544B6FC33E02732952C0 /* SelectionTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectionTextField.swift; path = SwiftPickerView/SelectionTextField.swift; sourceTree = "<group>"; };
 		C4368E5B9FEAF420A2893B717736EDDF /* Pods-SwiftPickerView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SwiftPickerView_Tests.modulemap"; sourceTree = "<group>"; };
 		C72EC1FFBB78DDDED160269595C161E9 /* Pods-SwiftPickerView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftPickerView_Example-Info.plist"; sourceTree = "<group>"; };
 		C7697DFE0D6AF47D2149468A415EBA1C /* Area.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Area.plist; path = SwiftPickerView/Area.plist; sourceTree = "<group>"; };
-		C9162D0AA3044F6FF236E9A47EA5AC25 /* SwiftPickerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftPickerView.framework; path = SwiftPickerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DBBD848EEDF8E0F4ABC1B56242E436AC /* UsefulPickerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UsefulPickerView.swift; path = SwiftPickerView/UsefulPickerView.swift; sourceTree = "<group>"; };
+		C9162D0AA3044F6FF236E9A47EA5AC25 /* SwiftPickerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftPickerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBBD848EEDF8E0F4ABC1B56242E436AC /* PickerViewManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PickerViewManager.swift; path = SwiftPickerView/PickerViewManager.swift; sourceTree = "<group>"; };
 		DCAF298A42C1009382C647177984D0DA /* Picker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Picker.swift; path = SwiftPickerView/Picker.swift; sourceTree = "<group>"; };
 		DE0A3E023DD0FE47AAADD4DCE074E8BD /* SwiftPickerView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftPickerView.xcconfig; sourceTree = "<group>"; };
 		E61F511F92CD6486F951D1C9C27CE321 /* Pods-SwiftPickerView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SwiftPickerView_Example.modulemap"; sourceTree = "<group>"; };
@@ -165,7 +165,7 @@
 				1C69C4E38CE4D82B31E13CA778677534 /* Province.plist */,
 				C1750C2F4593544B6FC33E02732952C0 /* SelectionTextField.swift */,
 				C05EF78E05CBA5B8811F8810930908E5 /* ToolBarView.swift */,
-				DBBD848EEDF8E0F4ABC1B56242E436AC /* UsefulPickerView.swift */,
+				DBBD848EEDF8E0F4ABC1B56242E436AC /* PickerViewManager.swift */,
 				5D31B66C602A9306E8105363C14671C2 /* Pod */,
 				E4E06FD67DAF95373F56AF8B6182EA4E /* Support Files */,
 			);
@@ -409,7 +409,7 @@
 				6C41684B3741B28F203861621CF524FE /* SelectionTextField.swift in Sources */,
 				058E368F8853704E2F9BE40E9F585ECA /* SwiftPickerView-dummy.m in Sources */,
 				A1B02C29AA8DBA7B421FC99B996FAFF0 /* ToolBarView.swift in Sources */,
-				5316693829AD7B34BE000CC330B0A32C /* UsefulPickerView.swift in Sources */,
+				5316693829AD7B34BE000CC330B0A32C /* PickerViewManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,8 +580,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
