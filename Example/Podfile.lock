@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: 0400e396cfca41ae2fa961138222e2f58c6bcc14
+PODS:
+  - SwiftPickerView (1.0.0)
 
-COCOAPODS: 1.8.3
+DEPENDENCIES:
+  - SwiftPickerView (from `../`)
+
+EXTERNAL SOURCES:
+  SwiftPickerView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SwiftPickerView: 61ab82eb57a24c6e0a82a3d56525a9f188557acd
+
+PODFILE CHECKSUM: 8763d8108007d4f8eb88edc900703a1a90e15608
+
+COCOAPODS: 1.9.0.beta.2

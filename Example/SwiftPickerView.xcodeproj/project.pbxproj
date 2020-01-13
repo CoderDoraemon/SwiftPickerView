@@ -7,12 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18BF22342351A8F600699B52 /* Area.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18BF222C2351A8F500699B52 /* Area.plist */; };
-		18BF22362351A8F600699B52 /* Province.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18BF222E2351A8F500699B52 /* Province.plist */; };
-		18BF22372351A8F600699B52 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BF222F2351A8F500699B52 /* PickerView.swift */; };
-		18BF22382351A8F600699B52 /* PickerViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BF22302351A8F500699B52 /* PickerViewManager.swift */; };
-		18BF22392351A8F600699B52 /* ToolBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BF22312351A8F500699B52 /* ToolBarView.swift */; };
-		18BF223A2351A8F600699B52 /* City.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18BF22322351A8F500699B52 /* City.plist */; };
 		2A8166D1A3811EB330EAB051 /* Pods_SwiftPickerView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB9DC5DE709B6A5B2CDB6311 /* Pods_SwiftPickerView_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -34,12 +28,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		18BF222C2351A8F500699B52 /* Area.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Area.plist; sourceTree = "<group>"; };
-		18BF222E2351A8F500699B52 /* Province.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Province.plist; sourceTree = "<group>"; };
-		18BF222F2351A8F500699B52 /* PickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
-		18BF22302351A8F500699B52 /* PickerViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewManager.swift; sourceTree = "<group>"; };
-		18BF22312351A8F500699B52 /* ToolBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolBarView.swift; sourceTree = "<group>"; };
-		18BF22322351A8F500699B52 /* City.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = City.plist; sourceTree = "<group>"; };
 		4171482CDC62F2404E5A044B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		57A94824E0C6A6EF4573DFB6 /* Pods_SwiftPickerView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftPickerView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59027B44C2BA1248F6BE7755 /* Pods-SwiftPickerView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftPickerView_Example.release.xcconfig"; path = "Target Support Files/Pods-SwiftPickerView_Example/Pods-SwiftPickerView_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -81,20 +69,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		18BF222B2351A8F500699B52 /* SwiftPickerView */ = {
-			isa = PBXGroup;
-			children = (
-				18BF222C2351A8F500699B52 /* Area.plist */,
-				18BF222E2351A8F500699B52 /* Province.plist */,
-				18BF222F2351A8F500699B52 /* PickerView.swift */,
-				18BF22302351A8F500699B52 /* PickerViewManager.swift */,
-				18BF22312351A8F500699B52 /* ToolBarView.swift */,
-				18BF22322351A8F500699B52 /* City.plist */,
-			);
-			name = SwiftPickerView;
-			path = ../../SwiftPickerView;
-			sourceTree = "<group>";
-		};
 		44B107312EF91D737CC252AF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,7 +104,6 @@
 		607FACD21AFB9204008FA782 /* Example for SwiftPickerView */ = {
 			isa = PBXGroup;
 			children = (
-				18BF222B2351A8F500699B52 /* SwiftPickerView */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -197,6 +170,7 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
+				3AF9047C07FBA52F6B8AFC03 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -274,11 +248,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
-				18BF223A2351A8F600699B52 /* City.plist in Resources */,
-				18BF22342351A8F600699B52 /* Area.plist in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
-				18BF22362351A8F600699B52 /* Province.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +307,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		3AF9047C07FBA52F6B8AFC03 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftPickerView_Example/Pods-SwiftPickerView_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftPickerView/SwiftPickerView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftPickerView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftPickerView_Example/Pods-SwiftPickerView_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -343,10 +332,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18BF22382351A8F600699B52 /* PickerViewManager.swift in Sources */,
-				18BF22392351A8F600699B52 /* ToolBarView.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
-				18BF22372351A8F600699B52 /* PickerView.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

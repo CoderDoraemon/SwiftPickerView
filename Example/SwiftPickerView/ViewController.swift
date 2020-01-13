@@ -40,51 +40,52 @@ class ViewController: UIViewController {
     
     @IBAction func singleBtnOnClick(_ sender: UIButton) {
         
-        PickerViewManager.showSingleColPicker("编程语言选择", data: singleData, defaultSelectedIndex: 2) {[unowned self] (selectedIndex, selectedValue) in
-            self.selectedDataLabel.text = "选中了第\(selectedIndex)行----选中的数据为\(selectedValue)"
-        }
+//        PickerViewManager.showSingleColPicker("编程语言选择", data: singleData, defaultSelectedIndex: 2) {[unowned self] (selectedIndex, selectedValue) in
+//            self.selectedDataLabel.text = "选中了第\(selectedIndex)行----选中的数据为\(selectedValue)"
+//        }
         
     }
     @IBAction func multipleBtnOnClick(_ sender: UIButton) {
         
         
-        PickerViewManager.showMultipleColsPicker("持续时间选择", data: multipleData, defaultSelectedIndexs: [0,1,1]) {[unowned self] (selectedIndexs, selectedValues) in
-            self.selectedDataLabel.text = "选中了第\(selectedIndexs)行----选中的数据为\(selectedValues)"
-
-        }
+//        PickerViewManager.showMultipleColsPicker("持续时间选择", data: multipleData, defaultSelectedIndexs: [0,1,1]) {[unowned self] (selectedIndexs, selectedValues) in
+//            self.selectedDataLabel.text = "选中了第\(selectedIndexs)行----选中的数据为\(selectedValues)"
+//
+//        }
         
     }
     @IBAction func multipleAssociatedBtnOnClick(_ sender: UIButton) {
         
         // 注意这里设置的是默认的选中值, 而不是选中的下标,省得去数关联数组里的下标
-        PickerViewManager.showMultipleAssociatedColsPicker("多列关联数据", data: multipleAssociatedData, defaultSelectedValues: ["交通工具","陆地","自行车"]) {[unowned self] (selectedIndexs, selectedValues) in
-            self.selectedDataLabel.text = "选中了第\(selectedIndexs)行----选中的数据为\(selectedValues)"
-            
-        }
+//        PickerViewManager.showMultipleAssociatedColsPicker("多列关联数据", data: multipleAssociatedData, defaultSelectedValues: ["交通工具","陆地","自行车"]) {[unowned self] (selectedIndexs, selectedValues) in
+//            self.selectedDataLabel.text = "选中了第\(selectedIndexs)行----选中的数据为\(selectedValues)"
+//
+//        }
         
     }
     @IBAction func citiesBtnOnClick(_ sender: UIButton) {
         // 注意设置默认值得时候, 必须设置完整, 不能进行省略 ["四川", "成都", "成华区"] 比如不能设置为["四川", "成都"]
         // ["北京", "通州"] 不能设置为["北京"]
-        PickerViewManager.showCitiesPicker("省市区选择", defaultSelectedValues: ["北京", "/", "/"], selectTopLevel: true) {[unowned self] (selectedIndexs, selectedValues) in
-            // 处理数据
-            let combinedString = selectedValues.reduce("", { (result, value) -> String in
-                result + " " + value
-            })
-            
-            self.selectedDataLabel.text = "选中了第\(selectedIndexs)行----选中的数据为\(combinedString)"
-            
-        }
+//        PickerViewManager.showCitiesPicker("省市区选择", defaultSelectedValues: ["北京", "/", "/"], selectTopLevel: true) {[unowned self] (selectedIndexs, selectedValues) in
+//            // 处理数据
+//            let combinedString = selectedValues.reduce("", { (result, value) -> String in
+//                result + " " + value
+//            })
+//
+//            self.selectedDataLabel.text = "选中了第\(selectedIndexs)行----选中的数据为\(combinedString)"
+//
+//        }
     }
+
     @IBAction func dateBtnOnClick(_ sender: UIButton) {
         
         
-        PickerViewManager.showDatePicker("日期选择") {[unowned self] ( selectedDate) in
-            let formatter = DateFormatter()
-            formatter.dateFormat = "yyyy-MM-dd"
-            let string = formatter.string(from: selectedDate)
-            self.selectedDataLabel.text = "选中了的日期是\(string)"
-        }
+//        PickerViewManager.showDatePicker("日期选择") {[unowned self] ( selectedDate) in
+//            let formatter = DateFormatter()
+//            formatter.dateFormat = "yyyy-MM-dd"
+//            let string = formatter.string(from: selectedDate)
+//            self.selectedDataLabel.text = "选中了的日期是\(string)"
+//        }
         
 
     }
@@ -92,16 +93,16 @@ class ViewController: UIViewController {
     @IBAction func timeBtnOnClick(_ sender: UIButton) {
         
         // style里面可以更改的和系统的DatePicker属性是一一对应的
-        var dateStyle = DatePickerSetting()
-        dateStyle.dateMode = .time
-        
-        PickerViewManager.showDatePicker("时间选择", datePickerSetting: dateStyle) { (selectedDate) in
-            let formatter = DateFormatter()
-            // H -> 24小时制
-            formatter.dateFormat = "HH: mm"
-            let string = formatter.string(from: selectedDate)
-            self.selectedDataLabel.text = "选中了的日期是\(string)"
-        }
+//        var dateStyle = DatePickerSetting()
+//        dateStyle.dateMode = .time
+//
+//        PickerViewManager.showDatePicker("时间选择", datePickerSetting: dateStyle) { (selectedDate) in
+//            let formatter = DateFormatter()
+//            // H -> 24小时制
+//            formatter.dateFormat = "HH: mm"
+//            let string = formatter.string(from: selectedDate)
+//            self.selectedDataLabel.text = "选中了的日期是\(string)"
+//        }
     }
     
     override func viewDidLoad() {

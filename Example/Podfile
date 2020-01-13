@@ -2,7 +2,7 @@ platform :ios, '9.0'
 use_frameworks!
 
 target 'SwiftPickerView_Example' do
-#  pod 'SwiftPickerView', :path => '../'
+  pod 'SwiftPickerView', :path => '../'
 
   target 'SwiftPickerView_Tests' do
     inherit! :search_paths
